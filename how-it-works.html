@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>How It Works - Job Matchmakers</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .how-it-works-container {
+      min-height: 100vh;
+      background: linear-gradient(90deg,rgb(30, 29, 112),rgb(59, 57, 153));
+      padding: 8rem 2rem;
+    }
+    .content-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 1rem;
+      padding: 4rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .section-title {
+      font-size: 3.2rem;
+      font-weight: 600;
+      color: #1f2937;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .steps-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+      margin-bottom: 4rem;
+    }
+    .step-card {
+      background: #f3f4f6;
+      padding: 2rem;
+      border-radius: 1rem;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .step-card:hover {
+      transform: translateY(-5px);
+    }
+    .step-number {
+      background: #6730ce;
+      color: white;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0 auto 1.5rem;
+    }
+    .step-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 1rem;
+    }
+    .step-description {
+      font-size: 1.6rem;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      padding: 2rem;
+      background: #f3f4f6;
+      border-radius: 1rem;
+    }
+    .feature-icon {
+      width: 3rem;
+      height: 3rem;
+      fill: #6730ce;
+    }
+    .feature-text {
+      flex: 1;
+    }
+    .feature-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 0.5rem;
+    }
+    .feature-description {
+      font-size: 1.4rem;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+    .cta-section {
+      text-align: center;
+      margin-top: 4rem;
+      padding-top: 4rem;
+      border-top: 1px solid #e5e7eb;
+    }
+    .cta-title {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 2rem;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 1.5rem 3rem;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: white;
+      background-color: #6730ce;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+    .cta-button:hover {
+      background-color: #5b2bb9;
+    }
+  </style>
+</head>
+<body>
+  <div class="how-it-works-container">
+    <div class="content-wrapper">
+      <h1 class="section-title">How Our Resume Checker Works</h1>
+      
+      <div class="steps-container">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Upload Your Resume</h3>
+          <p class="step-description">Simply upload your resume in PDF, DOC, or DOCX format. Our system accepts all standard resume file types.</p>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3 class="step-title">AI Analysis</h3>
+          <p class="step-description">Our advanced AI analyzes your resume for formatting, content, keywords, and industry best practices.</p>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Get Detailed Feedback</h3>
+          <p class="step-description">Receive comprehensive feedback and actionable suggestions to improve your resume's impact.</p>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+          </svg>
+          <div class="feature-text">
+            <h4 class="feature-title">ATS Compatibility</h4>
+            <p class="feature-description">Check if your resume is optimized for Applicant Tracking Systems.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+          <div class="feature-text">
+            <h4 class="feature-title">Instant Analysis</h4>
+            <p class="feature-description">Get results within seconds, no waiting or lengthy processing times.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+          </svg>
+          <div class="feature-text">
+            <h4 class="feature-title">Privacy Protected</h4>
+            <p class="feature-description">Your resume data is encrypted and never shared with third parties.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+            <path d="M12 14l-6.16-3.422a12.083 12.083 0 00-.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 016.824-2.998 12.078 12.078 0 00-.665-6.479L12 14z"></path>
+          </svg>
+          <div class="feature-text">
+            <h4 class="feature-title">Industry Insights</h4>
+            <p class="feature-description">Get recommendations based on your industry and job role.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <h2 class="cta-title">Ready to Improve Your Resume?</h2>
+        <a href="redirect_uploadpage.html" class="cta-button">Check Your Resume Now</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 
